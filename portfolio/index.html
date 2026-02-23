@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Usaid Shaikh - Visual Artist & Video Editor specializing in podcasts, talking head videos, educational content, real estate showcases, and short-form content.">
+    <meta name="keywords"
+        content="video editor, visual artist, video editing, Usaid Shaikh, premiere pro, after effects">
+    <title>Usaid Shaikh | Visual Artist</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="bg-grid"></div>
+        <div class="bg-glow bg-glow-1"></div>
+        <div class="bg-glow bg-glow-2"></div>
+        <div class="bg-glow bg-glow-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-logo"><img src="../Logo.png" alt="Usaid Shaikh" class="nav-logo-img"></a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-logo">Usaid Shaikh</h1>
+                <p class="hero-title">Visual Artist</p>
+                <p class="hero-bio">
+                    Transforming raw footage into captivating visual stories. I blend creativity with technical
+                    precision
+                    to craft videos that resonate, engage, and leave lasting impressions.
+                </p>
+                <div class="hero-cta">
+                    <a href="#work" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17" />
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-container">
+                    <img src="../Photo.png" alt="Usaid Shaikh" class="hero-photo">
+                    <div class="hero-image-glow"></div>
+                </div>
+                <!-- Floating Elements -->
+                <div class="floating-elements">
+                    <div class="float-element float-1">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                    </div>
+                    <div class="float-element float-2">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="2" />
+                            <path d="M7 2v20M17 2v20M2 12h20M2 7h5M2 17h5M17 17h5M17 7h5" />
+                        </svg>
+                    </div>
+                    <div class="float-element float-3">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <polygon points="10,8 16,12 10,16" fill="currentColor" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Work Section Header -->
+    <div class="work-header" id="work">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Work</h2>
+                <p class="section-subtitle">A showcase of my finest video editing projects</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Parallax Video Section -->
+    <section class="parallax-section">
+        <div class="parallax-container">
+            <!-- Sticky wrapper for scroll effect -->
+            <div class="parallax-sticky">
+                <!-- Editor Background (main parallax.mp4) -->
+                <div class="editor-background">
+                    <video class="editor-video" autoplay muted loop playsinline>
+                        <source
+                            src="https://res.cloudinary.com/deh8npmmn/video/upload/v1771784277/main_parallax_kjpvul.mp4"
+                            type="video/mp4">
+                    </video>
+                </div>
+
+                <!-- Main Video that zooms out -->
+                <div class="main-video-wrapper">
+                    <div class="main-video-container">
+                        <video class="main-video" autoplay muted loop playsinline>
+                            <source src="https://res.cloudinary.com/deh8npmmn/video/upload/v1771784274/main_mkb9qu.mp4"
+                                type="video/mp4">
+                        </video>
+                        <!-- Play overlay for when video is paused -->
+                        <div class="video-play-overlay" id="videoPlayOverlay">
+                            <button class="play-button-large">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                            <span>Click to Play</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Explore my work across different video categories</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Shorts -->
+                <article class="project-card" data-category="shorts"
+                    data-videos='["https://res.cloudinary.com/deh8npmmn/video/upload/v1771784280/shorts_ymdwhe.mp4","https://res.cloudinary.com/deh8npmmn/video/upload/v1771784270/9x16_1_mxia2j.mp4","https://res.cloudinary.com/deh8npmmn/video/upload/v1771784272/comp_1_w84iwb.mp4","https://res.cloudinary.com/deh8npmmn/video/upload/v1771784272/comp_2_um2o0c.mp4"]'>
+                    <div class="project-thumbnail">
+                        <div class="thumbnail-preview">
+                            <video muted loop playsinline preload="metadata">
+                                <source
+                                    src="https://res.cloudinary.com/deh8npmmn/video/upload/v1771784280/shorts_ymdwhe.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                            <span class="video-count">4 videos</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">📱 Short Form</span>
+                        <h3 class="project-title">Short-Form Content</h3>
+                        <p class="project-description">Viral-worthy vertical videos with punchy edits, trending effects,
+                            and scroll-stopping hooks.</p>
+                    </div>
+                </article>
+
+                <!-- Talking Head -->
+                <article class="project-card" data-category="talking-head"
+                    data-videos='["https://res.cloudinary.com/deh8npmmn/video/upload/v1771784310/talking_head_pam9nc.mp4","https://res.cloudinary.com/deh8npmmn/video/upload/v1771784334/vsl_vmiyj2.mp4","https://res.cloudinary.com/deh8npmmn/video/upload/v1771784287/batch_200_e7boln.mp4"]'>
+                    <div class="project-thumbnail">
+                        <div class="thumbnail-preview">
+                            <video muted loop playsinline preload="metadata">
+                                <source
+                                    src="https://res.cloudinary.com/deh8npmmn/video/upload/v1771784310/talking_head_pam9nc.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                            <span class="video-count">3 videos</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">🎤 Talking Head</span>
+                        <h3 class="project-title">Long Form Content</h3>
+                        <p class="project-description">Engaging content creation with smooth cuts, zoom effects, and
+                            animated elements that amplify your message.</p>
+                    </div>
+                </article>
+
+                <!-- Real Estate -->
+                <article class="project-card" data-category="real-estate"
+                    data-videos='["https://res.cloudinary.com/deh8npmmn/video/upload/v1771784362/real_estate_npvnfj.mp4","https://res.cloudinary.com/deh8npmmn/video/upload/v1771784350/v3_seb4or.mp4","https://res.cloudinary.com/deh8npmmn/video/upload/v1771784356/29th_june_v2_coqqg0.mp4"]'>
+                    <div class="project-thumbnail">
+                        <div class="thumbnail-preview">
+                            <video muted loop playsinline preload="metadata">
+                                <source
+                                    src="https://res.cloudinary.com/deh8npmmn/video/upload/v1771784350/v3_seb4or.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                            <span class="video-count">3 videos</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">🏠 Real Estate</span>
+                        <h3 class="project-title">Real Estate Videos</h3>
+                        <p class="project-description">Stunning property showcases with cinematic tours, smooth
+                            transitions, and music that sells the dream.</p>
+                    </div>
+                </article>
+
+                <!-- Podcast -->
+                <article class="project-card" data-category="podcast"
+                    data-videos='["https://res.cloudinary.com/deh8npmmn/video/upload/v1771784316/body_1_alenov.mp4"]'>
+                    <div class="project-thumbnail">
+                        <div class="thumbnail-preview">
+                            <video muted loop playsinline preload="metadata">
+                                <source
+                                    src="https://res.cloudinary.com/deh8npmmn/video/upload/v1771784316/body_1_alenov.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                            <span class="video-count">1 video</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">🎙️ Podcast</span>
+                        <h3 class="project-title">Podcast</h3>
+                        <p class="project-description">Professional podcast production with clean audio, dynamic
+                            visuals, and engaging layouts that keep viewers hooked.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Overlay Modal -->
+    <div class="video-overlay-modal" id="videoOverlayModal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+            <button class="modal-nav modal-prev" id="modalPrev">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15,18 9,12 15,6" />
+                </svg>
+            </button>
+            <div class="modal-video-wrapper">
+                <video class="modal-video" id="modalVideo" controls playsinline>
+                    <source id="modalVideoSource" src="" type="video/mp4">
+                </video>
+            </div>
+            <button class="modal-nav modal-next" id="modalNext">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9,6 15,12 9,18" />
+                </svg>
+            </button>
+            <div class="modal-info">
+                <span class="modal-category" id="modalCategory"></span>
+                <span class="modal-counter" id="modalCounter"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tools Section -->
+    <section class="tools" id="tools">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Arsenal</span>
+                <h2 class="section-title">Software & Tools</h2>
+                <p class="section-subtitle">The creative toolkit I use to bring visions to life</p>
+            </div>
+            <div class="tools-keyboard">
+                <div class="keyboard-body">
+                    <div class="keyboard-plate">
+                        <!-- Row 1: Adobe Suite -->
+                        <div class="key-row">
+                            <div class="tool-key" style="--key-color: #9999FF; --key-glow: rgba(153,153,255,0.4)">
+                                <div class="key-face">
+                                    <span class="key-abbr">Pr</span>
+                                </div>
+                                <span class="key-label">Premiere Pro</span>
+                            </div>
+                            <div class="tool-key" style="--key-color: #9999FF; --key-glow: rgba(153,153,255,0.4)">
+                                <div class="key-face">
+                                    <span class="key-abbr">Ae</span>
+                                </div>
+                                <span class="key-label">After Effects</span>
+                            </div>
+                            <div class="tool-key" style="--key-color: #31A8FF; --key-glow: rgba(49,168,255,0.4)">
+                                <div class="key-face">
+                                    <span class="key-abbr">Ps</span>
+                                </div>
+                                <span class="key-label">Photoshop</span>
+                            </div>
+                            <div class="tool-key" style="--key-color: #31A8FF; --key-glow: rgba(49,168,255,0.4)">
+                                <div class="key-face">
+                                    <span class="key-abbr">Lr</span>
+                                </div>
+                                <span class="key-label">Lightroom</span>
+                            </div>
+                        </div>
+                        <!-- Row 2: AI Platforms -->
+                        <div class="key-row">
+                            <div class="tool-key" style="--key-color: #D97757; --key-glow: rgba(217,119,87,0.4)">
+                                <div class="key-face">
+                                    <span class="key-icon">✦</span>
+                                </div>
+                                <span class="key-label">Claude</span>
+                            </div>
+                            <div class="tool-key" style="--key-color: #10A37F; --key-glow: rgba(16,163,127,0.4)">
+                                <div class="key-face">
+                                    <span class="key-icon">◈</span>
+                                </div>
+                                <span class="key-label">ChatGPT</span>
+                            </div>
+                            <div class="tool-key" style="--key-color: #FF4D4D; --key-glow: rgba(255,77,77,0.4)">
+                                <div class="key-face">
+                                    <span class="key-icon">▶</span>
+                                </div>
+                                <span class="key-label">SORA</span>
+                            </div>
+                            <div class="tool-key" style="--key-color: #4285F4; --key-glow: rgba(66,133,244,0.4)">
+                                <div class="key-face">
+                                    <span class="key-icon">◆</span>
+                                </div>
+                                <span class="key-label">VEO 3</span>
+                            </div>
+                            <div class="tool-key" style="--key-color: #8E75FF; --key-glow: rgba(142,117,255,0.4)">
+                                <div class="key-face">
+                                    <span class="key-icon">✧</span>
+                                </div>
+                                <span class="key-label">Gemini</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="keyboard-reflection"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <span class="section-tag">Let's Connect</span>
+                    <h2 class="section-title">Ready to Create?</h2>
+                    <p class="contact-desc">Have a project in mind? Let's turn your vision into stunning visual content.
+                    </p>
+
+                    <div class="contact-links">
+                        <a href="mailto:usaideditsvideos@gmail.com" class="contact-link">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">usaideditsvideos@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/usaid-shaikh-videoeditor" target="_blank"
+                            rel="noopener noreferrer" class="contact-link">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">LinkedIn</span>
+                                <span class="contact-value">Usaid Shaikh</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-cta">
+                    <div class="cta-card">
+                        <h3>Start Your Project</h3>
+                        <p>Drop me an email and let's discuss how we can work together.</p>
+                        <a href="mailto:usaideditsvideos@gmail.com?subject=Project%20Inquiry"
+                            class="btn btn-primary btn-large">
+                            <span>Send Email</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13" />
+                                <polygon points="22,2 15,22 11,13 2,9" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">Usaid</span>
+                    <p class="footer-tagline">Visual Artist & Video Editor</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#work">Work</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#tools">Tools</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="mailto:usaideditsvideos@gmail.com" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/usaid-shaikh-videoeditor" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Usaid Shaikh. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
