@@ -68,7 +68,7 @@ function initParallaxVideoSection() {
 
         // Target position: where the preview panel is in the editor background
         // Adjust these values to match your exact editor layout
-        const targetTop = 12.43;      // % from top
+        const targetTop = 12.40;      // % from top
         const targetLeft = 16.97;     // % from left
         const targetWidth = 55.3;    // % of viewport width
 
