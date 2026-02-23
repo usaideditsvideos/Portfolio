@@ -53,7 +53,11 @@ function initParallaxVideoSection() {
         });
     }
 
-    // Scroll-driven animation
+    // Skip parallax scroll animation on mobile
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile) return;
+
+    // Scroll-driven animation (desktop only)
     const mainVideoWrapper = document.querySelector('.main-video-wrapper');
 
     function updateParallax() {
